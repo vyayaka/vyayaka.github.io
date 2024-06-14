@@ -1,0 +1,77 @@
+site_name: Vyayaka®
+site_url: https://www.vyayaka.in
+site_author: Vyayaka®
+site_description: Vyayaka® Website
+theme:
+  name: material
+  language: en
+  logo:  assets/logo.png
+  favicon: assets/favicon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - content.tooltips
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - attr_list
+  - md_in_html
+  - pymdownx.snippets:
+     auto_append:
+        - includes/abbreviations.md
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/vyayaka
+      name: Vyayaka&reg; on LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/vyayaka
+      name: Vyayaka&reg; on GitHub
+
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+  - social:
+      cards_layout_options:
+        background_color: "#FF671F"
+
+nav:
+  - Home: index.md
+  - Products: products.md
+  - Services: services.md
+  - Careers: careers.md
+  - Store: store.md
+  - Contact: contact.md
+
+copyright: Copyright &copy 2024 <a href="https://www.github.com/vyayaka">Vyayaka<sup>&reg;</sup></a>. All rights reserved.
