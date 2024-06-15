@@ -1,7 +1,7 @@
 site_name: Vyayaka®
 site_url: https://www.vyayaka.in
 site_author: Vyayaka®
-site_description: Vyayaka® Website
+site_description: An electronic payments platform.
 theme:
   name: material
   language: en
